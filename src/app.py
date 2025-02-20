@@ -21,7 +21,7 @@ from utils.tool import GmailChat
 from dotenv import load_dotenv
 # **Import the attachments summarizer module**
 from utils.attachment import GmailAttachmentSummarizer
-
+load_dotenv()
 # Load any existing environment variables
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # (Any other secrets can be loaded similarly)
