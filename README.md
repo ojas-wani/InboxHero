@@ -9,18 +9,9 @@
 
 ---
 
-## Demo 🎥
+## Demo Video - InboxHero 🎥
 
-Watch the demo video to see InboxHero in action:
-
-<p align="center">
-  <a href="assets/demo.mp4">
-    <video width="640" height="360" controls>
-      <source src="assets/demo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </a>
-</p>
+https://github.com/user-attachments/assets/YOUR_VIDEO_ID
 
 ---
 
