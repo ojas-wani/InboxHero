@@ -11,7 +11,12 @@
 
 ## Demo Video - InboxHero 🎥
 
-https://github.com/user-attachments/assets/8e79293d-2659-4a83-bdfc-bbc185120fdf
+<p align="center">
+  <video width="640" height="360" controls>
+    <source src="https://github.com/user-attachments/assets/8e79293d-2659-4a83-bdfc-bbc185120fdf" type="video/mp4">
+  </video>
+</p>
+
 ---
 
 ## Features 🚀
