@@ -22,8 +22,12 @@ from utils.tool import GmailChat
 # **Import the attachments summarizer module**
 from utils.attachment import GmailAttachmentSummarizer
 
-# Load any existing environment variables
+# ------------------------------------
+# Load Environment Variables from Repository Secrets
+# ------------------------------------
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# (Any other secrets can be loaded similarly)
+
 # --------------------------------------------------
 # Create a session-specific ID (if not already set)
 # --------------------------------------------------

@@ -17,9 +17,9 @@ from langchain.prompts.chat import ChatPromptTemplate
 warnings.filterwarnings("ignore", category=ResourceWarning)
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-# Load environment variables (e.g., GROQ_API_KEY)
+# Load environment variables (e.g., GROQ_API_KEY) from GitHub repository secrets.
 load_dotenv()
-
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 class GmailAttachmentSummarizer:
     """
@@ -41,6 +41,7 @@ class GmailAttachmentSummarizer:
             max_tokens=300,
             timeout=60,
             max_retries=2,
+            api_key=GROQ_API_KEY  # Now using the repository secret.
         )
 
     def fetch_emails_with_attachments(self):
@@ -110,7 +111,7 @@ class GmailAttachmentSummarizer:
         # Build the prompt text with instructions for a single, concise paragraph summary.
         prompt_text = (
             "Please provide a concise summary of the following attachment content as a single paragraph. "
-            "Make it as concise as possible and avoid detailed breakdowns yet give overview of the attachment "
+            "Make it as concise as possible and avoid detailed breakdowns yet give an overview of the attachment. "
             "Do not include any bullet points, lists, or detailed breakdowns. "
             "Only summarize the overall content.\n\n"
             f"{safe_text_content}"

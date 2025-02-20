@@ -15,6 +15,7 @@ from langchain.prompts.chat import ChatPromptTemplate
 # Configure logging for better debugging and traceability.
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 load_dotenv()  # Load environment variables from a .env file if present.
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 class EmailDraftUtil:
     def __init__(self, gmail=None):
@@ -62,13 +63,14 @@ class EmailDraftUtil:
             if len(email_body) > 1000:
                 email_body = email_body[:1000] + "..."
             
-            # Initialize the ChatGroq LLM.
+            # Initialize the ChatGroq LLM with the repository secret.
             llm = ChatGroq(
                 model="mixtral-8x7b-32768",  # Adjust model as needed.
                 temperature=0.7,
                 max_tokens=300,
                 timeout=60,
                 max_retries=2,
+                api_key=GROQ_API_KEY  # Using the repository secret.
             )
 
             # Revised prompt: instruct the model that it is acting as Zamal Ali Babar's assistant.

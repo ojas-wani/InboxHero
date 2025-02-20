@@ -11,8 +11,9 @@ from simplegmail import Gmail
 from langchain_groq import ChatGroq
 from langchain.prompts.chat import ChatPromptTemplate
 
-# Load environment variables (including GROQ_API_KEY)
+# Load environment variables (including GROQ_API_KEY) from repository secrets.
 load_dotenv()
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 class GmailChat:
     def __init__(self, time_frame_hours: int = 24):
@@ -35,7 +36,7 @@ class GmailChat:
         for email in emails:
             try:
                 email_date = parse_date(email.date)
-            except Exception as e:
+            except Exception:
                 continue
             if email_date >= time_threshold:
                 filtered.append(email)
@@ -78,6 +79,7 @@ class GmailChat:
             max_tokens=150,
             timeout=60,
             max_retries=2,
+            api_key=GROQ_API_KEY  # Using the repository secret
         )
         prompt = ChatPromptTemplate.from_messages([
             (
