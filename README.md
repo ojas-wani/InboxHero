@@ -50,7 +50,7 @@ Watch the demo video to see InboxHero in action:
   - Choose from multiple time windows (e.g., 1 Hour, 6 Hours, 24 Hours, etc.) to filter emails based on recency.
 
 - **Seamless Integration:**  
-  - Powered by **Langchain** ![Langchain Logo](https://raw.githubusercontent.com/hwchase17/langchain/master/docs/_static/img/langchain-logo.png) for advanced prompt management and natural language processing.
+  - Powered by **Langchain**🦜 for advanced prompt management and natural language processing.
   - Utilizes robust Python libraries like Streamlit, simplegmail, and python-dotenv for a smooth user experience.
 
 ---
