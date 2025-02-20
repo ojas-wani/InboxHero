@@ -11,11 +11,7 @@
 
 ## Demo Video - InboxHero 🎥
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=47HzTGK2Bqw" target="_blank">
-    <img src="https://img.youtube.com/vi/47HzTGK2Bqw/0.jpg" alt="Watch the demo" width="600">
-  </a>
-</p>
+https://github.com/user-attachments/assets/8e79293d-2659-4a83-bdfc-bbc185120fdf
 
 ---
 
