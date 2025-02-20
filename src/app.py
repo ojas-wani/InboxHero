@@ -91,7 +91,7 @@ if "client_secret" not in st.session_state:
                         with open(client_file, "w") as f:
                             json.dump(client_secret_data, f)
                         st.success("Client secret file uploaded and validated successfully.")
-                        st.rerun()
+                        st.experimental_rerun()
                     else:
                         st.error("Invalid client secret file format. Please upload a valid Gmail client secret JSON file.")
                 except Exception as e:
