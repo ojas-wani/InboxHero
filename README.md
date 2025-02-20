@@ -50,8 +50,8 @@ https://github.com/user-attachments/assets/8e79293d-2659-4a83-bdfc-bbc185120fdf
 
 **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/inboxhero.git
-   cd inboxhero
+   git clone https://github.com/zamalali/InboxHero.git
+   cd InboxHero
    ```
 
 ### Install Dependencies:
