@@ -59,6 +59,34 @@ https://github.com/user-attachments/assets/8e79293d-2659-4a83-bdfc-bbc185120fdf
 ```bash
 pip install -r requirements.txt
 ```
+## 📌 Get Your LangChain Groq API Key
+
+To use LangChain with Groq, you need an API key. Follow these steps:
+
+1. **Go to the Groq Console**: [Click here to get your API key](https://console.groq.com/playground)
+2. **Sign in or Sign up** if you haven't already.
+3. **Generate an API key** and copy it.
+4. **Set up the key in your environment**:
+   - If running locally, add it to your `.env` file:
+     ```ini
+     GROQ_API_KEY=your_api_key_here
+     ```
+   - If deploying to a cloud service, add it to **your environment variables or repository secrets**.
+
+✅ Now, you're all set to use Groq with LangChain! 🚀
+
+
+## 📌 Get Your Gmail Client Secret JSON File
+
+To connect to your Gmail account, you need a **Client Secret JSON file**. Follow these steps:
+
+1. **Go to Google API Console**: [Follow this guide to download your client secret file](https://stackoverflow.com/questions/52200589/where-to-download-your-client-secret-file-json-file#:~:text=Go%20to%20your%20Google%20API%20Console%20where%20you%27ll,arrow%20on%20the%20farthest%20right%20of%20the%20page%3A)
+2. **Enable the Gmail API** for your Google Cloud project.
+3. **Download the `client_secret.json` file** from the Credentials section.
+4. **Upload the file when you run the streamlit app**.
+
+✅ Now, you're ready to authenticate and interact with Gmail in your app! ✉️
+
 
 ### Contributing 🤝
 Contributions are welcome! If you’d like to improve InboxHero or add new features, please fork the repository and submit a pull request.
