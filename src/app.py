@@ -18,13 +18,11 @@ from langchain.prompts.chat import ChatPromptTemplate
 # Import our utility functions and GmailChat class (from your other modules)
 from utils.utils import generate_and_save_draft
 from utils.tool import GmailChat
-
+from dotenv import load_dotenv
 # **Import the attachments summarizer module**
 from utils.attachment import GmailAttachmentSummarizer
 
-# ------------------------------------
-# Load Environment Variables from Repository Secrets
-# ------------------------------------
+# Load any existing environment variables
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # (Any other secrets can be loaded similarly)
 
